@@ -1,5 +1,4 @@
 # CMake Tutorial
-=================
 Following [CMake Guides](https://cmake.org/cmake/help/latest/index.html#guides).
 
 ## Build and Run
