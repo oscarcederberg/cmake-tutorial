@@ -1,7 +1,7 @@
 # CMake Tutorial
 Following [CMake Guides](https://cmake.org/cmake/help/latest/index.html#guides).
 
-## Build and Run
+## 01 Build and Run
 Create a build directory, set it up with CMake, and build the project.
 ```bash
 mdkir build
@@ -10,7 +10,7 @@ cmake ..
 cmake --build . # Can be run from root-, or build-directory
 ```
 
-## Version Number and Config Header File
+## 02 Version Number and Config Header File
 Variables included in the _CMakeLists.txt_:
 
 * `${PROJECT_NAME}` is the project name specified in the latest `project()`-command.
@@ -20,3 +20,6 @@ Variables included in the _CMakeLists.txt_:
 
 `configure_file()` will automatically output the new header into the build-directory (`${PROJECT_BINDARY_DIR}`) if a relative path is used. You can set an absolute path by setting output to e.g. `"${PROJECT_SOURCE_DIR}/include/<file_name>"`.\
 In `target_include_directories()`, the directory can be changed to `${PROJECT_BINARY_DIR}` if relative path was used for config file. Relative path will be based on root of project directory, not build-directory.
+
+## 03 C++ Standard
+`set(CMAKE_CXX_STANDARD_REQUIRED True)` is required for the `CXX_STANDARD`-property not to decay to a previous standard.
