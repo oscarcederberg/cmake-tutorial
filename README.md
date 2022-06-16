@@ -23,3 +23,6 @@ In `target_include_directories()`, the directory can be changed to `${PROJECT_BI
 
 ## 03 C++ Standard
 `set(CMAKE_CXX_STANDARD_REQUIRED True)` is required for the `CXX_STANDARD`-property not to risk decaying to a previous standard.
+
+## 04 Add a library
+It is possible to add `libs/CMakeLists.txt` with `add_subdirectory(ExampleLib)` and then add `libs` as a subdirectory to root instead. However, it makes is a bit more puzzling to handle optional libraries.
