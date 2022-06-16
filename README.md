@@ -22,4 +22,4 @@ Variables included in the _CMakeLists.txt_:
 In `target_include_directories()`, the directory can be changed to `${PROJECT_BINARY_DIR}` if relative path was used for config file. Relative path will be based on root of project directory, not build-directory.
 
 ## 03 C++ Standard
-`set(CMAKE_CXX_STANDARD_REQUIRED True)` is required for the `CXX_STANDARD`-property not to decay to a previous standard.
+`set(CMAKE_CXX_STANDARD_REQUIRED True)` is required for the `CXX_STANDARD`-property not to risk decaying to a previous standard.
