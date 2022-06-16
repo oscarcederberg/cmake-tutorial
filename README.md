@@ -28,7 +28,7 @@ In `target_include_directories()`, the directory can be changed to `${PROJECT_BI
 It is possible to add `libs/CMakeLists.txt` with `add_subdirectory(ExampleLib)` and then add `libs` as a subdirectory to root instead. However, it makes is a bit more puzzling to handle optional libraries.
 
 ## 05 Add Usage Requirements
-The usage requirement in `target_include_directories()` states who needs include the current source directory.
+The usage requirement in `target_include_directories()` states who needs to include the current source directory.
 
 * `INTERFACE`: consumers, but not the producer.
 * `PRIVATE`: producer, but not the consumers.
